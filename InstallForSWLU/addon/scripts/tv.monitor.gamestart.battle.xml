@@ -1355,11 +1355,11 @@
 			<text> </text>
 			<text>:</text>
 			<text> </text>
-			<text>target</text>
+			<text>argument1</text>
 			<text>=</text>
 			<var>$ship</var>
 			<text> </text>
-			<text>stopwhenleaderdocked</text>
+			<text>argument2</text>
 			<text>=</text>
 			<var>0</var>
 		</line>
@@ -1683,11 +1683,11 @@
 			<text> </text>
 			<text>:</text>
 			<text> </text>
-			<text>target</text>
+			<text>argument1</text>
 			<text>=</text>
 			<var>$ship</var>
 			<text> </text>
-			<text>stopwhenleaderdocked</text>
+			<text>argument2</text>
 			<text>=</text>
 			<var>0</var>
 		</line>
@@ -2008,11 +2008,11 @@
 			<text> </text>
 			<text>:</text>
 			<text> </text>
-			<text>target</text>
+			<text>argument1</text>
 			<text>=</text>
 			<var>$ship</var>
 			<text> </text>
-			<text>stopwhenleaderdocked</text>
+			<text>argument2</text>
 			<text>=</text>
 			<var>0</var>
 		</line>
@@ -2339,11 +2339,11 @@
 			<text> </text>
 			<text>:</text>
 			<text> </text>
-			<text>target</text>
+			<text>argument1</text>
 			<text>=</text>
 			<var>$ship</var>
 			<text> </text>
-			<text>stopwhenleaderdocked</text>
+			<text>argument2</text>
 			<text>=</text>
 			<var>0</var>
 		</line>
@@ -2548,7 +2548,7 @@
 			<text> </text>
 			<text>equipment</text>
 		</line>
-		<line linenr="194" indent="&#160;&#160;">
+		<line linenr="194" indent="&#160;">
 			<var>$tuning</var>
 			<text> </text>
 			<text>=</text>
@@ -2568,7 +2568,7 @@
 			<text> </text>
 			<var>{Engine Tuning}</var>
 		</line>
-		<line linenr="195" indent="&#160;">
+		<line linenr="195" indent="&#160;&#160;">
 			<text>=</text>
 			<text> </text>
 			<var>$ship.support2</var>
@@ -2620,7 +2620,7 @@
 			<text> </text>
 			<var>{Rudder Optimisation}</var>
 		</line>
-		<line linenr="198" indent="&#160;&#160;">
+		<line linenr="198" indent="&#160;">
 			<var>$ship.support2</var>
 			<text>-&gt;</text>
 			<text> </text>
@@ -2664,11 +2664,11 @@
 			<text> </text>
 			<text>:</text>
 			<text> </text>
-			<text>target</text>
+			<text>argument1</text>
 			<text>=</text>
 			<var>$ship</var>
 			<text> </text>
-			<text>stopwhenleaderdocked</text>
+			<text>argument2</text>
 			<text>=</text>
 			<var>0</var>
 		</line>
@@ -2679,7 +2679,7 @@
 			<text>end</text>
 		</line>
 		<line linenr="203" indent="&#160;" />
-		<line linenr="204" indent="&#160;">
+		<line linenr="204" indent="&#160;&#160;">
 			<var>$flag</var>
 			<text> </text>
 			<text>=</text>
@@ -2690,7 +2690,7 @@
 			<text>end</text>
 		</line>
 		<line linenr="206" indent="&#160;" />
-		<line linenr="207" indent="&#160;&#160;">
+		<line linenr="207" indent="&#160;">
 			<text>=</text>
 			<text> </text>
 			<var>[PLAYERSHIP]</var>
@@ -2706,7 +2706,7 @@
 			<text> </text>
 			<var>{Engine Tuning}</var>
 		</line>
-		<line linenr="208" indent="&#160;">
+		<line linenr="208" indent="">
 			<text>=</text>
 			<text> </text>
 			<var>[PLAYERSHIP]</var>
@@ -2722,7 +2722,7 @@
 			<text> </text>
 			<var>{Rudder Optimisation}</var>
 		</line>
-		<line linenr="209" indent="&#160;">
+		<line linenr="209" indent="">
 			<text>=</text>
 			<text> </text>
 			<var>[PLAYERSHIP]</var>
@@ -2738,7 +2738,7 @@
 			<text> </text>
 			<var>{Boost Extension}</var>
 		</line>
-		<line linenr="210" indent="&#160;">
+		<line linenr="210" indent="">
 			<text>=</text>
 			<text> </text>
 			<var>[PLAYERSHIP]</var>
@@ -2921,41 +2921,6 @@
 			<var>1000000</var>
 		</line>
 		<line linenr="228" indent="">
-			<var>$rand</var>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
-			<text>random</text>
-			<text> </text>
-			<text>value</text>
-			<text> </text>
-			<text>between</text>
-			<text> </text>
-			<var>0</var>
-			<text> </text>
-			<text>and</text>
-			<text> </text>
-			<var>1</var>
-		</line>
-		<line linenr="229" indent="">
-			<text>do</text>
-			<text> </text>
-			<text>if</text>
-			<text> </text>
-			<var>$rand</var>
-		</line>
-		<line linenr="230" indent="">
-			<var>$y</var>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
-			<var>$y</var>
-			<text> </text>
-			<text>*</text>
-			<text> </text>
-			<var>-1</var>
-		</line>
-		<line linenr="231" indent="">
 			<var>$z</var>
 			<text> </text>
 			<text>=</text>
@@ -2972,7 +2937,7 @@
 			<text> </text>
 			<var>1000000</var>
 		</line>
-		<line linenr="232" indent="">
+		<line linenr="229" indent="">
 			<var>$rand</var>
 			<text> </text>
 			<text>=</text>
@@ -2989,14 +2954,14 @@
 			<text> </text>
 			<var>1</var>
 		</line>
-		<line linenr="233" indent="">
+		<line linenr="230" indent="">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
 			<text> </text>
 			<var>$rand</var>
 		</line>
-		<line linenr="234" indent="">
+		<line linenr="231" indent="">
 			<var>$z</var>
 			<text> </text>
 			<text>=</text>
@@ -3007,29 +2972,58 @@
 			<text> </text>
 			<var>-1</var>
 		</line>
-		<line linenr="235" indent="" />
-		<line linenr="236" indent="">
+		<line linenr="232" indent="" />
+		<line linenr="233" indent="">
 			<var>$r</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>255</var>
 		</line>
-		<line linenr="237" indent="">
+		<line linenr="234" indent="">
 			<var>$g</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>255</var>
 		</line>
-		<line linenr="238" indent="">
+		<line linenr="235" indent="">
 			<var>$b</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>255</var>
 		</line>
-		<line linenr="239" indent="" />
+		<line linenr="236" indent="" />
+		<line linenr="237" indent="">
+			<var>$sun</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<text>random</text>
+			<text> </text>
+			<text>value</text>
+			<text> </text>
+			<text>between</text>
+			<text> </text>
+			<var>0</var>
+			<text> </text>
+			<text>and</text>
+			<text> </text>
+			<var>137</var>
+		</line>
+		<line linenr="238" indent="">
+			<comment>* Sun 23 can cause the game to crash</comment>
+		</line>
+		<line linenr="239" indent="">
+			<text>while</text>
+			<text> </text>
+			<var>$sun</var>
+			<text> </text>
+			<text>==</text>
+			<text> </text>
+			<var>23</var>
+		</line>
 		<line linenr="240" indent="">
 			<var>$sun</var>
 			<text> </text>
@@ -3048,39 +3042,10 @@
 			<var>137</var>
 		</line>
 		<line linenr="241" indent="">
-			<comment>* Sun 23 can cause the game to crash</comment>
-		</line>
-		<line linenr="242" indent="">
-			<text>while</text>
-			<text> </text>
-			<var>$sun</var>
-			<text> </text>
-			<text>==</text>
-			<text> </text>
-			<var>23</var>
-		</line>
-		<line linenr="243" indent="">
-			<var>$sun</var>
-			<text> </text>
-			<text>=</text>
-			<text> </text>
-			<text>random</text>
-			<text> </text>
-			<text>value</text>
-			<text> </text>
-			<text>between</text>
-			<text> </text>
-			<var>0</var>
-			<text> </text>
-			<text>and</text>
-			<text> </text>
-			<var>137</var>
-		</line>
-		<line linenr="244" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="245" indent="" />
-		<line linenr="246" indent="">
+		<line linenr="242" indent="" />
+		<line linenr="243" indent="">
 			<text>=</text>
 			<text> </text>
 			<text>create</text>
@@ -3120,10 +3085,10 @@
 			<text>=</text>
 			<var>$z</var>
 		</line>
-		<line linenr="247" indent="">
+		<line linenr="244" indent="">
 			<text>endsub</text>
 		</line>
-		<line linenr="248" indent="" />
+		<line linenr="245" indent="" />
 	</sourcetext>
 	<codearray>
 		<sval type="array" size="10">
@@ -3172,7 +3137,7 @@
 				<sval type="string" val="b" />
 				<sval type="string" val="sun" />
 			</sval>
-			<sval type="array" size="219">
+			<sval type="array" size="216">
 				<sval type="array" size="6">
 					<sval type="int" val="102" />
 					<sval type="string" val="tv.get.player.sector" />
@@ -4974,38 +4939,6 @@
 				</sval>
 				<sval type="array" size="6">
 					<sval type="int" val="110" />
-					<sval type="int" val="6" />
-					<sval type="int" val="4" />
-					<sval type="int" val="0" />
-					<sval type="int" val="4" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="7">
-					<sval type="int" val="104" />
-					<sval type="int" val="-1610559992" />
-					<sval type="int" val="1" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="6" />
-					<sval type="int" val="1" />
-					<sval type="int" val="-1" />
-				</sval>
-				<sval type="array" size="13">
-					<sval type="int" val="104" />
-					<sval type="int" val="32" />
-					<sval type="int" val="3" />
-					<sval type="int" val="131074" />
-					<sval type="int" val="32" />
-					<sval type="int" val="4" />
-					<sval type="int" val="-1" />
-					<sval type="int" val="15" />
-					<sval type="int" val="13" />
-					<sval type="int" val="3" />
-					<sval type="int" val="-1" />
-					<sval type="int" val="13" />
-					<sval type="int" val="-2" />
-				</sval>
-				<sval type="array" size="6">
-					<sval type="int" val="110" />
 					<sval type="int" val="33" />
 					<sval type="int" val="4" />
 					<sval type="int" val="500000" />
@@ -5022,7 +4955,7 @@
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610558968" />
+					<sval type="int" val="-1610559736" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="6" />
@@ -5081,7 +5014,7 @@
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610557175" />
+					<sval type="int" val="-1610557943" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="37" />
@@ -5104,7 +5037,7 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
-					<sval type="int" val="214" />
+					<sval type="int" val="211" />
 				</sval>
 				<sval type="array" size="18">
 					<sval type="int" val="754" />
@@ -5278,28 +5211,28 @@
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="210" />
+					<sval type="int" val="207" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="213" />
+					<sval type="int" val="210" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="3">
-					<sval type="int" val="214" />
+					<sval type="int" val="211" />
 					<sval type="int" val="1" />
 					<sval type="string" val="Sun 23 can cause the game to crash" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="217" />
+					<sval type="int" val="214" />
 					<sval type="int" val="4" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="217" />
+					<sval type="int" val="214" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="219" />
+					<sval type="int" val="216" />
 					<sval type="int" val="2" />
 				</sval>
 			</sval>
