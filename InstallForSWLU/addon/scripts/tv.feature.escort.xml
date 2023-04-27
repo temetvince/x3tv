@@ -667,7 +667,11 @@
 			<text> </text>
 			<text>=</text>
 			<text> </text>
-			<var>$this.max.speed</var>
+			<var>$target.speed</var>
+			<text> </text>
+			<text>+</text>
+			<text> </text>
+			<var>10</var>
 		</line>
 		<line linenr="085" indent="&#160;&#160;&#160;">
 			<var>$working</var>
@@ -1599,14 +1603,20 @@
 					<sval type="int" val="4" />
 					<sval type="int" val="-5" />
 				</sval>
-				<sval type="array" size="7">
+				<sval type="array" size="13">
 					<sval type="int" val="104" />
 					<sval type="int" val="16" />
-					<sval type="int" val="1" />
+					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
+					<sval type="int" val="9" />
+					<sval type="int" val="4" />
 					<sval type="int" val="10" />
-					<sval type="int" val="1" />
+					<sval type="int" val="15" />
+					<sval type="int" val="11" />
+					<sval type="int" val="3" />
 					<sval type="int" val="-1" />
+					<sval type="int" val="11" />
+					<sval type="int" val="-2" />
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
