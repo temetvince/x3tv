@@ -190,21 +190,41 @@
 			<text> </text>
 			<text>and</text>
 			<text> </text>
-			<var>137</var>
+			<var>129</var>
 		</line>
 		<line linenr="020" indent="">
-			<comment>* Sun 23 can cause the game to crash</comment>
+			<comment>* Sun 10/11 are special subtypes, 10 is solar system sun</comment>
 		</line>
 		<line linenr="021" indent="">
+			<comment>* Sun 23 can cause the game to crash</comment>
+		</line>
+		<line linenr="022" indent="">
 			<text>while</text>
 			<text> </text>
 			<var>$sun</var>
 			<text> </text>
 			<text>==</text>
 			<text> </text>
+			<var>10</var>
+			<text> </text>
+			<text>OR</text>
+			<text> </text>
+			<var>$sun</var>
+			<text> </text>
+			<text>==</text>
+			<text> </text>
+			<var>11</var>
+			<text> </text>
+			<text>OR</text>
+			<text> </text>
+			<var>$sun</var>
+			<text> </text>
+			<text>==</text>
+			<text> </text>
 			<var>23</var>
+			<text> </text>
 		</line>
-		<line linenr="022" indent="&#160;">
+		<line linenr="023" indent="&#160;">
 			<var>$sun</var>
 			<text> </text>
 			<text>=</text>
@@ -219,13 +239,13 @@
 			<text> </text>
 			<text>and</text>
 			<text> </text>
-			<var>137</var>
+			<var>129</var>
 		</line>
-		<line linenr="023" indent="">
+		<line linenr="024" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="024" indent="" />
-		<line linenr="025" indent="">
+		<line linenr="025" indent="" />
+		<line linenr="026" indent="">
 			<var>$sun</var>
 			<text> </text>
 			<text>=</text>
@@ -267,13 +287,13 @@
 			<text>=</text>
 			<var>$z</var>
 		</line>
-		<line linenr="026" indent="" />
-		<line linenr="027" indent="">
+		<line linenr="027" indent="" />
+		<line linenr="028" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>$sun</var>
 		</line>
-		<line linenr="028" indent="" />
+		<line linenr="029" indent="" />
 	</sourcetext>
 	<codearray>
 		<sval type="array" size="10">
@@ -440,22 +460,46 @@
 					<sval type="int" val="4" />
 					<sval type="int" val="0" />
 					<sval type="int" val="4" />
-					<sval type="int" val="138" />
+					<sval type="int" val="130" />
 				</sval>
-				<sval type="array" size="13">
+				<sval type="array" size="37">
 					<sval type="int" val="104" />
 					<sval type="int" val="-1610608119" />
-					<sval type="int" val="3" />
+					<sval type="int" val="11" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="9" />
+					<sval type="int" val="4" />
+					<sval type="int" val="10" />
+					<sval type="int" val="15" />
+					<sval type="int" val="0" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="9" />
+					<sval type="int" val="4" />
+					<sval type="int" val="11" />
+					<sval type="int" val="15" />
+					<sval type="int" val="0" />
+					<sval type="int" val="15" />
+					<sval type="int" val="10" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="9" />
 					<sval type="int" val="4" />
 					<sval type="int" val="23" />
 					<sval type="int" val="15" />
 					<sval type="int" val="0" />
-					<sval type="int" val="3" />
+					<sval type="int" val="15" />
+					<sval type="int" val="10" />
+					<sval type="int" val="11" />
 					<sval type="int" val="-1" />
 					<sval type="int" val="0" />
 					<sval type="int" val="-2" />
+					<sval type="int" val="10" />
+					<sval type="int" val="-4" />
+					<sval type="int" val="0" />
+					<sval type="int" val="-5" />
+					<sval type="int" val="10" />
+					<sval type="int" val="-8" />
+					<sval type="int" val="0" />
+					<sval type="int" val="-9" />
 				</sval>
 				<sval type="array" size="6">
 					<sval type="int" val="110" />
@@ -463,7 +507,7 @@
 					<sval type="int" val="4" />
 					<sval type="int" val="0" />
 					<sval type="int" val="4" />
-					<sval type="int" val="138" />
+					<sval type="int" val="130" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
@@ -505,7 +549,7 @@
 					<sval type="string" val="Create sun in sector" />
 				</sval>
 			</sval>
-			<sval type="array" size="9">
+			<sval type="array" size="10">
 				<sval type="array" size="2">
 					<sval type="int" val="4" />
 					<sval type="int" val="2" />
@@ -521,6 +565,11 @@
 				<sval type="array" size="2">
 					<sval type="int" val="14" />
 					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="15" />
+					<sval type="int" val="1" />
+					<sval type="string" val="Sun 10/11 are special subtypes, 10 is solar system sun" />
 				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="15" />

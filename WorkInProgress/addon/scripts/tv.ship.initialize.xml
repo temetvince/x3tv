@@ -14,7 +14,25 @@
 		<argument index="5" name="missiles.fire.probability" type="Var/Number" desc="0 to 100" />
 	</arguments>
 	<sourcetext>
-		<line linenr="001" indent="">
+		<line linenr="001" indent="" interruptable="@">
+			<var>$int.min</var>
+			<text> </text>
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>tv.get.int.min</call>
+			<text>:</text>
+		</line>
+		<line linenr="002" indent="">
+			<text> </text>
+		</line>
+		<line linenr="003" indent="">
 			<var>[THIS]</var>
 			<text>-&gt;</text>
 			<text> </text>
@@ -24,8 +42,57 @@
 			<text> </text>
 			<text>equipment</text>
 		</line>
-		<line linenr="002" indent="" />
-		<line linenr="003" indent="">
+		<line linenr="004" indent="" />
+		<line linenr="005" indent="">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>add</text>
+			<text> </text>
+			<var>$int.min</var>
+			<text> </text>
+			<text>units</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<var>{Fighter Drone}</var>
+		</line>
+		<line linenr="006" indent="">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>add</text>
+			<text> </text>
+			<var>$int.min</var>
+			<text> </text>
+			<text>units</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<var>{Fighter Drone MKII}</var>
+		</line>
+		<line linenr="007" indent="">
+			<text>=</text>
+			<text> </text>
+			<var>[THIS]</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>add</text>
+			<text> </text>
+			<var>$int.min</var>
+			<text> </text>
+			<text>units</text>
+			<text> </text>
+			<text>of</text>
+			<text> </text>
+			<var>{Keris}</var>
+		</line>
+		<line linenr="008" indent="" />
+		<line linenr="009" indent="">
 			<var>[THIS]</var>
 			<text>-&gt;</text>
 			<text> </text>
@@ -45,7 +112,7 @@
 			<text> </text>
 			<var>0</var>
 		</line>
-		<line linenr="004" indent="">
+		<line linenr="010" indent="">
 			<var>[THIS]</var>
 			<text>-&gt;</text>
 			<text> </text>
@@ -57,10 +124,9 @@
 			<text> </text>
 			<text>value</text>
 			<text>:</text>
-			<text> </text>
 			<var>$shields</var>
 		</line>
-		<line linenr="005" indent="">
+		<line linenr="011" indent="">
 			<var>[THIS]</var>
 			<text>-&gt;</text>
 			<text> </text>
@@ -78,7 +144,7 @@
 			<text>:</text>
 			<var>0</var>
 		</line>
-		<line linenr="006" indent="">
+		<line linenr="012" indent="">
 			<var>[THIS]</var>
 			<text>-&gt;</text>
 			<text> </text>
@@ -93,8 +159,8 @@
 			<text> </text>
 			<var>$missiles</var>
 		</line>
-		<line linenr="007" indent="" />
-		<line linenr="008" indent="">
+		<line linenr="013" indent="" />
+		<line linenr="014" indent="">
 			<var>[THIS]</var>
 			<text>-&gt;</text>
 			<text> </text>
@@ -110,18 +176,8 @@
 			<text> </text>
 			<var>$missiles.fire.probability</var>
 		</line>
-		<line linenr="009" indent="">
-			<var>[THIS]</var>
-			<text>-&gt;</text>
-			<text> </text>
-			<text>set</text>
-			<text> </text>
-			<text>formation</text>
-			<text> </text>
-			<var>[Formation.TheShield]</var>
-		</line>
-		<line linenr="010" indent="" />
-		<line linenr="011" indent="" interruptable="@">
+		<line linenr="015" indent="" />
+		<line linenr="016" indent="" interruptable="@">
 			<text>=</text>
 			<text> </text>
 			<var>[THIS]</var>
@@ -135,13 +191,13 @@
 			<text> </text>
 			<text>:</text>
 		</line>
-		<line linenr="012" indent="" />
-		<line linenr="013" indent="">
+		<line linenr="017" indent="" />
+		<line linenr="018" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="014" indent="" />
+		<line linenr="019" indent="" />
 	</sourcetext>
 	<codearray>
 		<sval type="array" size="10">
@@ -150,18 +206,57 @@
 			<sval type="string" val="" />
 			<sval type="int" val="1" />
 			<sval type="int" val="0" />
-			<sval type="array" size="5">
+			<sval type="array" size="6">
 				<sval type="string" val="tunings" />
 				<sval type="string" val="shields" />
 				<sval type="string" val="lasers" />
 				<sval type="string" val="missiles" />
 				<sval type="string" val="missiles.fire.probability" />
+				<sval type="string" val="int.min" />
 			</sval>
-			<sval type="array" size="9">
+			<sval type="array" size="12">
+				<sval type="array" size="6">
+					<sval type="int" val="102" />
+					<sval type="string" val="tv.get.int.min" />
+					<sval type="int" val="5" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="0" />
+				</sval>
 				<sval type="array" size="3">
 					<sval type="int" val="1918" />
 					<sval type="int" val="131075" />
 					<sval type="int" val="1" />
+				</sval>
+				<sval type="array" size="8">
+					<sval type="int" val="646" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="5" />
+					<sval type="int" val="9" />
+					<sval type="int" val="1048586" />
+				</sval>
+				<sval type="array" size="8">
+					<sval type="int" val="646" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="5" />
+					<sval type="int" val="9" />
+					<sval type="int" val="1048686" />
+				</sval>
+				<sval type="array" size="8">
+					<sval type="int" val="646" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="-2147483647" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="5" />
+					<sval type="int" val="9" />
+					<sval type="int" val="1048685" />
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="1805" />
@@ -202,13 +297,6 @@
 					<sval type="int" val="131074" />
 					<sval type="int" val="4" />
 				</sval>
-				<sval type="array" size="5">
-					<sval type="int" val="509" />
-					<sval type="int" val="131075" />
-					<sval type="int" val="1" />
-					<sval type="int" val="131075" />
-					<sval type="int" val="137" />
-				</sval>
 				<sval type="array" size="6">
 					<sval type="int" val="102" />
 					<sval type="string" val="tv.set.turrets.defense" />
@@ -245,9 +333,13 @@
 					<sval type="string" val="0 to 100" />
 				</sval>
 			</sval>
-			<sval type="array" size="5">
+			<sval type="array" size="7">
 				<sval type="array" size="2">
 					<sval type="int" val="1" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="2" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
@@ -255,15 +347,19 @@
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="7" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="8" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="2">
 					<sval type="int" val="9" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="10" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="11" />
+					<sval type="int" val="2" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="12" />
 					<sval type="int" val="2" />
 				</sval>
 			</sval>

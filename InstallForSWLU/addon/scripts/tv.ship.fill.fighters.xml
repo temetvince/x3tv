@@ -13,7 +13,7 @@
 		<argument index="4" name="lasers" type="Var/Number" desc="Lasers to add; 0 to 100" />
 		<argument index="5" name="missiles" type="Var/Number" desc="Missiles to add; 0 to 100" />
 		<argument index="6" name="missiles.fire.probability" type="Var/Number" desc="0 to 100" />
-		<argument index="7" name="script" type="Var/Number" desc="0=none;1=protect;2=attacknearest" />
+		<argument index="7" name="script" type="Var/Number" desc="0=none;1=protect;2=attacknearest;3=killenemiesland" />
 	</arguments>
 	<sourcetext>
 		<line linenr="001" indent="">
@@ -306,6 +306,7 @@
 			<text>script</text>
 			<text> </text>
 			<call>!ship.cmd.protect.std</call>
+			<text> </text>
 			<text>:</text>
 			<text> </text>
 			<text>target</text>
@@ -315,7 +316,6 @@
 			<text>stopifleaderdocked</text>
 			<text>=</text>
 			<var>0</var>
-			<text> </text>
 		</line>
 		<line linenr="034" indent="&#160;">
 			<text>else</text>
@@ -339,6 +339,7 @@
 			<text>script</text>
 			<text> </text>
 			<call>!ship.cmd.attacknearest.std</call>
+			<text> </text>
 			<text>:</text>
 			<text> </text>
 			<text>target</text>
@@ -348,21 +349,61 @@
 			<text>stopwhenleaderdocked</text>
 			<text>=</text>
 			<var>0</var>
-			<text> </text>
 		</line>
 		<line linenr="036" indent="&#160;">
+			<text>else</text>
+			<text> </text>
+			<text>if</text>
+			<text> </text>
+			<var>$script</var>
+			<text> </text>
+			<text>==</text>
+			<text> </text>
+			<var>3</var>
+		</line>
+		<line linenr="037" indent="&#160;&#160;" interruptable="@">
+			<text>START</text>
+			<text> </text>
+			<var>$ship</var>
+			<text>-&gt;</text>
+			<text> </text>
+			<text>call</text>
+			<text> </text>
+			<text>script</text>
+			<text> </text>
+			<call>tv.set.task.killenemiesland</call>
+			<text>:</text>
+			<text> </text>
+			<text>object</text>
+			<text>=</text>
+			<var>[THIS]</var>
+			<text> </text>
+			<text>range</text>
+			<text>=</text>
+			<var>null</var>
+			<text> </text>
+			<text>arefpos</text>
+			<text>=</text>
+			<var>null</var>
+			<text> </text>
+			<text>noidle</text>
+			<text>=</text>
+			<var>1</var>
+			<text> </text>
+		</line>
+		<line linenr="038" indent="&#160;">
 			<text>end</text>
 		</line>
-		<line linenr="037" indent="">
-			<text>end</text>
-		</line>
-		<line linenr="038" indent="" />
 		<line linenr="039" indent="">
+			<text>end</text>
+		</line>
+		<line linenr="040" indent="" />
+		<line linenr="041" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
 		</line>
-		<line linenr="040" indent="" />
+		<line linenr="042" indent="" />
 	</sourcetext>
 	<codearray>
 		<sval type="array" size="10">
@@ -388,7 +429,7 @@
 				<sval type="string" val="ship.type" />
 				<sval type="string" val="ship" />
 			</sval>
-			<sval type="array" size="28">
+			<sval type="array" size="31">
 				<sval type="array" size="4">
 					<sval type="int" val="701" />
 					<sval type="int" val="131075" />
@@ -409,7 +450,7 @@
 				</sval>
 				<sval type="array" size="7">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610605815" />
+					<sval type="int" val="-1610605047" />
 					<sval type="int" val="1" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="9" />
@@ -607,11 +648,11 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
-					<sval type="int" val="26" />
+					<sval type="int" val="29" />
 				</sval>
 				<sval type="array" size="13">
 					<sval type="int" val="104" />
-					<sval type="int" val="-1610606075" />
+					<sval type="int" val="-1610605819" />
 					<sval type="int" val="3" />
 					<sval type="int" val="131074" />
 					<sval type="int" val="6" />
@@ -635,6 +676,41 @@
 					<sval type="int" val="1" />
 					<sval type="int" val="4" />
 					<sval type="int" val="0" />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="112" />
+					<sval type="int" val="29" />
+				</sval>
+				<sval type="array" size="13">
+					<sval type="int" val="104" />
+					<sval type="int" val="-1610605307" />
+					<sval type="int" val="3" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="6" />
+					<sval type="int" val="4" />
+					<sval type="int" val="3" />
+					<sval type="int" val="15" />
+					<sval type="int" val="0" />
+					<sval type="int" val="3" />
+					<sval type="int" val="-1" />
+					<sval type="int" val="0" />
+					<sval type="int" val="-2" />
+				</sval>
+				<sval type="array" size="14">
+					<sval type="int" val="102" />
+					<sval type="string" val="tv.set.task.killenemiesland" />
+					<sval type="int" val="-2147483646" />
+					<sval type="int" val="131074" />
+					<sval type="int" val="14" />
+					<sval type="int" val="4" />
+					<sval type="int" val="131075" />
+					<sval type="int" val="1" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="0" />
+					<sval type="int" val="4" />
+					<sval type="int" val="1" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="112" />
@@ -673,7 +749,7 @@
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="10" />
-					<sval type="string" val="0=none;1=protect;2=attacknearest" />
+					<sval type="string" val="0=none;1=protect;2=attacknearest;3=killenemiesland" />
 				</sval>
 			</sval>
 			<sval type="array" size="17">
@@ -730,19 +806,19 @@
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="26" />
+					<sval type="int" val="29" />
 					<sval type="int" val="4" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="27" />
+					<sval type="int" val="30" />
 					<sval type="int" val="4" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="27" />
+					<sval type="int" val="30" />
 					<sval type="int" val="2" />
 				</sval>
 				<sval type="array" size="2">
-					<sval type="int" val="28" />
+					<sval type="int" val="31" />
 					<sval type="int" val="2" />
 				</sval>
 			</sval>
