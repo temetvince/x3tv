@@ -35,7 +35,7 @@
 		</line>
 		<line linenr="004" indent="" />
 		<line linenr="005" indent="">
-			<comment>*al engine: register script='al.tv.phanon.main'</comment>
+			<comment>*al engine: register script='al.Phanon.Main'</comment>
 		</line>
 		<line linenr="006" indent="" />
 		<line linenr="007" indent="">
@@ -43,10 +43,6 @@
 		</line>
 		<line linenr="008" indent="" />
 		<line linenr="009" indent="">
-			<comment>*al engine: register script='al.SWLU.Main'</comment>
-		</line>
-		<line linenr="010" indent="" />
-		<line linenr="011" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>null</var>
@@ -76,7 +72,7 @@
 				</sval>
 			</sval>
 			<sval type="int" val="0" />
-			<sval type="array" size="8">
+			<sval type="array" size="6">
 				<sval type="array" size="2">
 					<sval type="int" val="1" />
 					<sval type="int" val="2" />
@@ -88,7 +84,7 @@
 				<sval type="array" size="3">
 					<sval type="int" val="2" />
 					<sval type="int" val="1" />
-					<sval type="string" val="al engine: register script='al.tv.phanon.main'" />
+					<sval type="string" val="al engine: register script='al.Phanon.Main'" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="2" />
@@ -98,15 +94,6 @@
 					<sval type="int" val="2" />
 					<sval type="int" val="1" />
 					<sval type="string" val="al engine: register script='al.Revelation.Main'" />
-				</sval>
-				<sval type="array" size="2">
-					<sval type="int" val="2" />
-					<sval type="int" val="2" />
-				</sval>
-				<sval type="array" size="3">
-					<sval type="int" val="2" />
-					<sval type="int" val="1" />
-					<sval type="string" val="al engine: register script='al.SWLU.Main'" />
 				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="2" />

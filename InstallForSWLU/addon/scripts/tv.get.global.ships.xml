@@ -9,6 +9,13 @@
 	<arguments />
 	<sourcetext>
 		<line linenr="001" indent="">
+			<comment>* Returns: All ShipTypes in the game in this data structure: { Class: { Race: [ Type ] } }</comment>
+		</line>
+		<line linenr="002" indent="">
+			<comment>* Example: { M3: { Argon: [  Albion Pride, Nova, ... ], Teladi: [ Kea, Kea Miner, ... ], ... }, M4: ... }  </comment>
+		</line>
+		<line linenr="003" indent="" />
+		<line linenr="004" indent="">
 			<var>$shipClasses</var>
 			<text> </text>
 			<text>=</text>
@@ -24,21 +31,21 @@
 			<text>=</text>
 			<text>'tv.ships'</text>
 		</line>
-		<line linenr="002" indent="" />
-		<line linenr="003" indent="">
+		<line linenr="005" indent="" />
+		<line linenr="006" indent="">
 			<text>do</text>
 			<text> </text>
 			<text>if</text>
 			<text> </text>
 			<var>$shipClasses</var>
 		</line>
-		<line linenr="004" indent="&#160;">
+		<line linenr="007" indent="&#160;">
 			<text>return</text>
 			<text> </text>
 			<var>$shipClasses</var>
 		</line>
-		<line linenr="005" indent="" />
-		<line linenr="006" indent="">
+		<line linenr="008" indent="" />
+		<line linenr="009" indent="">
 			<var>$shipClasses</var>
 			<text> </text>
 			<text>=</text>
@@ -47,15 +54,15 @@
 			<text> </text>
 			<text>alloc</text>
 		</line>
-		<line linenr="007" indent="" />
-		<line linenr="008" indent="">
+		<line linenr="010" indent="" />
+		<line linenr="011" indent="">
 			<var>$maintype</var>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>[SSTYPE_SHIP]</var>
 		</line>
-		<line linenr="009" indent="">
+		<line linenr="012" indent="">
 			<var>$subTypes</var>
 			<text> </text>
 			<text>=</text>
@@ -74,18 +81,18 @@
 			<text> </text>
 			<var>$maintype</var>
 		</line>
-		<line linenr="010" indent="">
+		<line linenr="013" indent="">
 			<text>while</text>
 			<text> </text>
 			<var>$subTypes</var>
 		</line>
-		<line linenr="011" indent="&#160;">
+		<line linenr="014" indent="&#160;">
 			<text>dec</text>
 			<text> </text>
 			<var>$subTypes</var>
 		</line>
-		<line linenr="012" indent="&#160;" />
-		<line linenr="013" indent="&#160;">
+		<line linenr="015" indent="&#160;" />
+		<line linenr="016" indent="&#160;">
 			<var>$shipType</var>
 			<text> </text>
 			<text>=</text>
@@ -106,7 +113,7 @@
 			<text> </text>
 			<var>$subTypes</var>
 		</line>
-		<line linenr="014" indent="&#160;">
+		<line linenr="017" indent="&#160;">
 			<var>$typeRace</var>
 			<text> </text>
 			<text>=</text>
@@ -122,7 +129,7 @@
 			<text>=</text>
 			<var>$shipType</var>
 		</line>
-		<line linenr="015" indent="&#160;">
+		<line linenr="018" indent="&#160;">
 			<var>$typeClass</var>
 			<text> </text>
 			<text>=</text>
@@ -141,8 +148,8 @@
 			<text> </text>
 			<var>$shipType</var>
 		</line>
-		<line linenr="016" indent="&#160;" />
-		<line linenr="017" indent="&#160;">
+		<line linenr="019" indent="&#160;" />
+		<line linenr="020" indent="&#160;">
 			<var>$validRaces</var>
 			<text> </text>
 			<text>=</text>
@@ -156,7 +163,7 @@
 			<text>=</text>
 			<var>15</var>
 		</line>
-		<line linenr="018" indent="&#160;">
+		<line linenr="021" indent="&#160;">
 			<var>$validRaces</var>
 			<text>[</text>
 			<var>0</var>
@@ -166,7 +173,7 @@
 			<text> </text>
 			<var>[Enemy Race]</var>
 		</line>
-		<line linenr="019" indent="&#160;">
+		<line linenr="022" indent="&#160;">
 			<var>$validRaces</var>
 			<text>[</text>
 			<var>1</var>
@@ -176,7 +183,7 @@
 			<text> </text>
 			<var>[Friendly Race]</var>
 		</line>
-		<line linenr="020" indent="&#160;&#160;">
+		<line linenr="023" indent="&#160;&#160;">
 			<var>$validRaces</var>
 			<text>[</text>
 			<var>2</var>
@@ -186,7 +193,7 @@
 			<text> </text>
 			<var>[Argon]</var>
 		</line>
-		<line linenr="021" indent="&#160;">
+		<line linenr="024" indent="&#160;">
 			<var>$validRaces</var>
 			<text>[</text>
 			<var>3</var>
@@ -196,7 +203,7 @@
 			<text> </text>
 			<var>[Boron]</var>
 		</line>
-		<line linenr="022" indent="&#160;">
+		<line linenr="025" indent="&#160;">
 			<var>$validRaces</var>
 			<text>[</text>
 			<var>4</var>
@@ -206,7 +213,7 @@
 			<text> </text>
 			<var>[Paranid]</var>
 		</line>
-		<line linenr="023" indent="&#160;">
+		<line linenr="026" indent="&#160;">
 			<var>$validRaces</var>
 			<text>[</text>
 			<var>5</var>
@@ -216,7 +223,7 @@
 			<text> </text>
 			<var>[Split]</var>
 		</line>
-		<line linenr="024" indent="&#160;&#160;">
+		<line linenr="027" indent="&#160;&#160;">
 			<var>$validRaces</var>
 			<text>[</text>
 			<var>6</var>
@@ -226,7 +233,7 @@
 			<text> </text>
 			<var>[Teladi]</var>
 		</line>
-		<line linenr="025" indent="&#160;&#160;">
+		<line linenr="028" indent="&#160;&#160;">
 			<var>$validRaces</var>
 			<text>[</text>
 			<var>7</var>
@@ -236,7 +243,7 @@
 			<text> </text>
 			<var>[Terran]</var>
 		</line>
-		<line linenr="026" indent="&#160;">
+		<line linenr="029" indent="&#160;">
 			<var>$validRaces</var>
 			<text>[</text>
 			<var>8</var>
@@ -246,7 +253,7 @@
 			<text> </text>
 			<var>[Yaki]</var>
 		</line>
-		<line linenr="027" indent="&#160;">
+		<line linenr="030" indent="&#160;">
 			<var>$validRaces</var>
 			<text>[</text>
 			<var>9</var>
@@ -256,7 +263,7 @@
 			<text> </text>
 			<var>[Pirates]</var>
 		</line>
-		<line linenr="028" indent="&#160;">
+		<line linenr="031" indent="&#160;">
 			<var>$validRaces</var>
 			<text>[</text>
 			<var>10</var>
@@ -266,7 +273,7 @@
 			<text> </text>
 			<var>[Goner]</var>
 		</line>
-		<line linenr="029" indent="&#160;">
+		<line linenr="032" indent="&#160;">
 			<var>$validRaces</var>
 			<text>[</text>
 			<var>11</var>
@@ -276,7 +283,7 @@
 			<text> </text>
 			<var>[Xenon]</var>
 		</line>
-		<line linenr="030" indent="&#160;&#160;">
+		<line linenr="033" indent="&#160;&#160;">
 			<var>$validRaces</var>
 			<text>[</text>
 			<var>12</var>
@@ -286,7 +293,7 @@
 			<text> </text>
 			<var>[ATF]</var>
 		</line>
-		<line linenr="031" indent="&#160;&#160;">
+		<line linenr="034" indent="&#160;&#160;">
 			<var>$validRaces</var>
 			<text>[</text>
 			<var>13</var>
@@ -296,7 +303,7 @@
 			<text> </text>
 			<var>[Player]</var>
 		</line>
-		<line linenr="032" indent="&#160;">
+		<line linenr="035" indent="&#160;">
 			<var>$validRaces</var>
 			<text>[</text>
 			<var>14</var>
@@ -306,8 +313,8 @@
 			<text> </text>
 			<var>[Kha'ak]</var>
 		</line>
-		<line linenr="033" indent="&#160;" />
-		<line linenr="034" indent="&#160;">
+		<line linenr="036" indent="&#160;" />
+		<line linenr="037" indent="&#160;">
 			<text>skip</text>
 			<text> </text>
 			<text>if</text>
@@ -323,11 +330,11 @@
 			<text> </text>
 			<var>$validRaces</var>
 		</line>
-		<line linenr="035" indent="&#160;">
+		<line linenr="038" indent="&#160;">
 			<text>continue</text>
 		</line>
-		<line linenr="036" indent="&#160;" />
-		<line linenr="037" indent="">
+		<line linenr="039" indent="&#160;" />
+		<line linenr="040" indent="">
 			<var>$classRaces</var>
 			<text> </text>
 			<text>=</text>
@@ -344,14 +351,14 @@
 			<text> </text>
 			<text>)</text>
 		</line>
-		<line linenr="038" indent="">
+		<line linenr="041" indent="">
 			<text>if</text>
 			<text> </text>
 			<text>not</text>
 			<text> </text>
 			<var>$classRaces</var>
 		</line>
-		<line linenr="039" indent="">
+		<line linenr="042" indent="">
 			<var>$classRaces</var>
 			<text> </text>
 			<text>=</text>
@@ -360,7 +367,7 @@
 			<text> </text>
 			<text>alloc</text>
 		</line>
-		<line linenr="040" indent="">
+		<line linenr="043" indent="">
 			<text>table</text>
 			<text> </text>
 			<text>set</text>
@@ -368,18 +375,20 @@
 			<var>$shipClasses</var>
 			<text> </text>
 			<text>(</text>
+			<text> </text>
 			<var>$typeClass</var>
+			<text> </text>
 			<text>)</text>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>$classRaces</var>
 		</line>
-		<line linenr="041" indent="">
+		<line linenr="044" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="042" indent="" />
-		<line linenr="043" indent="">
+		<line linenr="045" indent="" />
+		<line linenr="046" indent="">
 			<var>$classRaceShips</var>
 			<text> </text>
 			<text>=</text>
@@ -391,17 +400,19 @@
 			<var>$classRaces</var>
 			<text> </text>
 			<text>(</text>
+			<text> </text>
 			<var>$typeRace</var>
+			<text> </text>
 			<text>)</text>
 		</line>
-		<line linenr="044" indent="">
+		<line linenr="047" indent="">
 			<text>if</text>
 			<text> </text>
 			<text>not</text>
 			<text> </text>
 			<var>$classRaceShips</var>
 		</line>
-		<line linenr="045" indent="">
+		<line linenr="048" indent="">
 			<var>$classRaceShips</var>
 			<text> </text>
 			<text>=</text>
@@ -415,7 +426,7 @@
 			<text>=</text>
 			<var>0</var>
 		</line>
-		<line linenr="046" indent="">
+		<line linenr="049" indent="">
 			<text>table</text>
 			<text> </text>
 			<text>set</text>
@@ -423,19 +434,20 @@
 			<var>$classRaces</var>
 			<text> </text>
 			<text>(</text>
+			<text> </text>
 			<var>$typeRace</var>
+			<text> </text>
 			<text>)</text>
 			<text> </text>
 			<text>=</text>
 			<text> </text>
 			<var>$classRaceShips</var>
 		</line>
-		<line linenr="047" indent="">
+		<line linenr="050" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="048" indent="" />
-		<line linenr="049" indent="">
-			<text> </text>
+		<line linenr="051" indent="" />
+		<line linenr="052" indent="">
 			<text>append</text>
 			<text> </text>
 			<var>$shipType</var>
@@ -446,9 +458,8 @@
 			<text> </text>
 			<var>$classRaceShips</var>
 		</line>
-		<line linenr="050" indent="" />
-		<line linenr="051" indent="">
-			<text> </text>
+		<line linenr="053" indent="" />
+		<line linenr="054" indent="">
 			<text>set</text>
 			<text> </text>
 			<text>global</text>
@@ -464,16 +475,16 @@
 			<text>=</text>
 			<var>$shipClasses</var>
 		</line>
-		<line linenr="052" indent="">
+		<line linenr="055" indent="">
 			<text>end</text>
 		</line>
-		<line linenr="053" indent="" />
-		<line linenr="054" indent="">
+		<line linenr="056" indent="" />
+		<line linenr="057" indent="">
 			<text>return</text>
 			<text> </text>
 			<var>$shipClasses</var>
 		</line>
-		<line linenr="055" indent="" />
+		<line linenr="058" indent="" />
 	</sourcetext>
 	<codearray>
 		<sval type="array" size="10">
@@ -806,7 +817,21 @@
 				</sval>
 			</sval>
 			<sval type="int" val="0" />
-			<sval type="array" size="16">
+			<sval type="array" size="19">
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="Returns: All ShipTypes in the game in this data structure: { Class: { Race: [ Type ] } }" />
+				</sval>
+				<sval type="array" size="3">
+					<sval type="int" val="0" />
+					<sval type="int" val="1" />
+					<sval type="string" val="Example: { M3: { Argon: [  Albion Pride, Nova, ... ], Teladi: [ Kea, Kea Miner, ... ], ... }, M4: ... }  " />
+				</sval>
+				<sval type="array" size="2">
+					<sval type="int" val="0" />
+					<sval type="int" val="2" />
+				</sval>
 				<sval type="array" size="2">
 					<sval type="int" val="1" />
 					<sval type="int" val="2" />
