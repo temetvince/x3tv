@@ -637,11 +637,11 @@
 			<text> </text>
 			<text>value</text>
 			<text> </text>
-			<text>from</text>
+			<text>between</text>
 			<text> </text>
-			<text>zero</text>
+			<var>0</var>
 			<text> </text>
-			<text>to</text>
+			<text>and</text>
 			<text> </text>
 			<var>1</var>
 		</line>
@@ -1972,15 +1972,15 @@
 			<text> </text>
 			<text>:</text>
 			<text> </text>
-			<text>argument1</text>
+			<text>chaff</text>
 			<text>=</text>
 			<var>500</var>
 			<text> </text>
-			<text>argument2</text>
+			<text>missile.fire.probability</text>
 			<text>=</text>
 			<var>75</var>
 			<text> </text>
-			<text>argument3</text>
+			<text>CCDSMark</text>
 			<text>=</text>
 			<var>{CCDS MK2}</var>
 		</line>
@@ -2111,7 +2111,7 @@
 		</line>
 		<line linenr="243" indent="&#160;&#160;" />
 		<line linenr="244" indent="&#160;&#160;">
-			<comment>*START $ship-&gt; call script '!ship.cmd.attacksame.std': target=$flagship stopifleaderdocked=0 </comment>
+			<comment>* START $ship-&gt; call script '!ship.cmd.attacksame.std': target=$flagship stopifleaderdocked=0 </comment>
 		</line>
 		<line linenr="245" indent="&#160;&#160;" interruptable="@">
 			<text>START</text>
@@ -2124,8 +2124,8 @@
 			<text>script</text>
 			<text> </text>
 			<call>!ship.cmd.attack.bigships.std</call>
-			<text>:</text>
 			<text> </text>
+			<text>:</text>
 		</line>
 		<line linenr="246" indent="&#160;&#160;">
 			<text>dec</text>
@@ -2264,16 +2264,16 @@
 			<text> </text>
 			<text>:</text>
 			<text> </text>
-			<text>victim</text>
+			<text>argument1</text>
 			<text>=</text>
 			<var>$flagship.opponent</var>
 			<text> </text>
-			<text>nofollowsec</text>
+			<text>argument2</text>
 			<text>=</text>
 			<var>0</var>
 		</line>
 		<line linenr="266" indent="&#160;">
-			<comment>*START $flagship-&gt; call script '!ship.cmd.attack.bigships.std': </comment>
+			<comment>* START $flagship-&gt; call script '!ship.cmd.attack.bigships.std': </comment>
 		</line>
 		<line linenr="267" indent="&#160;">
 			<var>$flagship</var>
@@ -2462,7 +2462,7 @@
 			<text> </text>
 			<text>type</text>
 			<text>=</text>
-			<var>{ATF Thor}</var>
+			<var>{Terran Thor}</var>
 			<text> </text>
 			<text>owner</text>
 			<text>=</text>
@@ -3276,9 +3276,11 @@
 					<sval type="int" val="10" />
 					<sval type="int" val="19" />
 				</sval>
-				<sval type="array" size="4">
-					<sval type="int" val="106" />
+				<sval type="array" size="6">
+					<sval type="int" val="110" />
 					<sval type="int" val="34" />
+					<sval type="int" val="4" />
+					<sval type="int" val="0" />
 					<sval type="int" val="4" />
 					<sval type="int" val="2" />
 				</sval>
